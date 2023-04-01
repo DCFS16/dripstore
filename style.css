@@ -65,6 +65,7 @@ html{
     }
     
     .tenis-3 {
+
     background: #FFC0BC;
     
     }
@@ -78,3 +79,71 @@ html{
         background: #E8DFCF;
     
     }
+
+    .box-size {
+        width:  44px;
+        height: 44px;
+        top: 600px;
+        radius:2px;
+    }
+
+    .box-circle {
+
+        
+        width: 31px;
+        height: 31px;
+        left:845px;
+
+        background: #6FEEFF;
+        
+        
+        border-radius: 18px;
+    }
+
+    .box-circle-rosa {
+
+        
+        width: 31px;
+        height: 31px;
+        left:845px;
+
+        background: #ff6969
+    ;
+        
+        
+        border-radius: 18px;}
+
+        .box-circle-preto {
+
+        
+            width: 31px;
+            height: 31px;
+            left:845px;
+    
+            background: #5E5E5E
+        ;
+            
+            
+            border-radius: 18px;}
+
+            .box-circle-violeta{
+
+        
+                width: 31px;
+                height: 31px;
+                left:845px;
+        
+                background: #6d70b7
+            ;
+                
+                
+                border-radius: 18px;}
+    
+    
+
+
+
+    
+
+    
+
