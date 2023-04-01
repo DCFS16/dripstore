@@ -41,3 +41,40 @@ html{
     left: 95%;
 }
 /*  ------- Natan ------- */
+
+.img_second {
+    display: flex;
+    margin-left: 60px;
+    }
+    
+    .img_second > img {
+    border-radius: 3px;   
+    margin: 10px;
+    padding: 20px 19px 20px 15px;
+    width: 50px;
+    }
+    .tenis-1 {
+    
+    background:#E2E3FF;
+    
+    }
+    
+    .tenis-2{
+    background: #FFE8BC;
+    
+    }
+    
+    .tenis-3 {
+    background: #FFC0BC;
+    
+    }
+    
+    .tenis-4 {
+        background: #DEC699;
+    
+    }
+    
+    .tenis-5 {
+        background: #E8DFCF;
+    
+    }
