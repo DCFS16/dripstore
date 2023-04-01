@@ -1,0 +1,5 @@
+
+.anúncio > h3 {color: orange; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 16px; }
+.anúncio > h2 {font-family:Inter; font-size: 64px;}
+.anúncio > h4 {font-family:Inter; font: size 18px;}
+button {text-align: center; color: white; background-color: #c92071; border-radius: 8px; width: 220px; height: 48px; font-size: 16px; font-weight: bold; letter-spacing: 0.75px;}
