@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: #E5E5E5;
+
+    
+}
+
+.carrinho {
+
+    border: 1px solid blue;
+    background-color: #FFFFFF;
+    width: 890px;
+    padding: 30px;
+    border-radius: 4px;
+    margin-right: 16px;
+
+    /* TODO: Remover quando o conteúdo for implementado */
+    height: 352px;
+}
+
+.resumo {
+
+    border: 1px solid blue;
+    background-color: #FFFFFF;
+    width: 334px;
+    padding: 30px;
+    border-radius: 4px;
+    
+    /* TODO: Remover quando o conteúdo for implementado */
+    height: 364px;
+}
