@@ -5,6 +5,7 @@ section {
 html{
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 .img_principal{
@@ -50,33 +51,73 @@ html{
 .text {
     
     height: 500px;
-    padding-top: 150px;
+    padding-top: 160px;
     left: 841px;
     background-color: rgb(247, 247, 247);
+    padding-left: 20px;
 }
 
 
 .tittle {
     font-size: 25px;
     font-weight: 700px;
-    line-height: 36px;
     letter-spacing: 1px;
     width: 440px;
     margin-bottom: 0px;
-    padding-bottom: 0;
+    padding: 0px;
 }
 
 .ref {color: #666666;
+    margin: 0px;
+    padding: 0px;
     
 }
 
-.avarengeRate {
-    display: flex;
+.price {
+    font-size: 16px;
+    margin: 0px;
 }
 
-.price {
-    display: flex;
+.price span {
+    font-size: 32px;
 }
+
+.price .discount {
+    font-size: 16px;
+    text-decoration-line: line-through;
+    color: #CCCCCC;
+    margin: 0px;
+}
+
+.starsRate {
+    display: flex 
+}
+
+.avarengeRate div {
+    display: flex;
+    background-color: #F6AA1C ;
+    width: 40%;
+    padding: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+
+    
+}
+
+
+.description {
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
 .img_second {
     display: flex;
     margin-left: 60px;
