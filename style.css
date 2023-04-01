@@ -1,4 +1,7 @@
 /*  ------- Natan ------- */
+section {
+    display: flex;
+}
 html{
     padding: 0;
     margin: 0;
@@ -42,6 +45,38 @@ html{
 }
 /*  ------- Natan ------- */
 
+/* Miguel */
+
+.text {
+    
+    height: 500px;
+    padding-top: 150px;
+    left: 841px;
+    background-color: rgb(247, 247, 247);
+}
+
+
+.tittle {
+    font-size: 25px;
+    font-weight: 700px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    width: 440px;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+}
+
+.ref {color: #666666;
+    
+}
+
+.avarengeRate {
+    display: flex;
+}
+
+.price {
+    display: flex;
+}
 .img_second {
     display: flex;
     margin-left: 60px;
@@ -146,4 +181,5 @@ html{
     
 
     
+
 
