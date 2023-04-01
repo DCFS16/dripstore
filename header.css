@@ -4,6 +4,36 @@
     box-sizing: border-box;
 }
 
+.header-logo{
+    width: 100%;
+    display: flex;
+    border: solid 1px red;
+    align-items: center;
+}
+
+.header-logo h1 {
+    font-family: 'Inter', sans-serif;
+    color: #C92071;
+    font-weight: 600;
+    font-size: 36.4px;
+    line-height: 44px;
+    padding: 3rem 3rem;
+}
+
+.header-search {
+    height: 64px;
+    background: #474747;
+    opacity: 0.04;
+    border-radius: 8px;
+    width: 559px;
+    
+}
+
+
+
+
+
+
 .main-header-menu {
     display: flex;
     width: 100%;
