@@ -1,4 +1,6 @@
-.container {
+.container-compra {
+    font-family: 'Inter';
+    font-style: normal;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,8 +19,7 @@
     border-radius: 4px;
     margin-right: 16px;
 
-    /* TODO: Remover quando o conteúdo for implementado */
-    height: 352px;
+ 
 }
 
 .resumo {
@@ -29,6 +30,65 @@
     padding: 30px;
     border-radius: 4px;
     
-    /* TODO: Remover quando o conteúdo for implementado */
-    height: 364px;
+
+}
+
+hr {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid #CCCCCC;
+}
+.descricao-compra {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-produto-compra {
+    display: flex;
+    background-color: #E2E3FF;
+    width: 130px;
+    height: 100px;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 4px;
+    margin-right: 20px;
+
+}
+
+.descricao-produto-compra {
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+    letter-spacing: 0.25px;
+}
+
+.titulo-produto-compra > h2 {
+    /* display: flex; */
+    line-height: 20px;
+    letter-spacing: 0.75px;
+    width: 219px;
+    font-weight: 700;
+    color: #1F1F1F;
+    font-size: 14px;
+}
+
+.caracteristicas-produto > .cor {
+
+    color: #8F8F8F;
+
+}
+
+.caracteristicas-produto > .tamanho {
+
+    color: #8F8F8F;
+}
+
+.caracteristicas-produto > .valor {
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+    text-align: center;
+    color: #1F1F1F;
 }
