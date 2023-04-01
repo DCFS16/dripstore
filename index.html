@@ -1,35 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
+    <section class="container">
+        <div class="container-compra">
 
-        <div class="carrinho">
-            Carrinho
+            <div class="carrinho">
+                <div class="elementos">
+                    <div class="elementos1">
+                        <p>Meu carrinho</p>
+                    </div>
+
+
+                    <div class="elementos2">
+                        <p>
+                            Quantidade
+                        </p>
+                        <p>
+                            Unitário
+                        </p>
+                        <p>
+                            Total
+                        </p>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="descricao-compra">
+
+                    <div class="img-produto-compra">
+                        <img src="imagens/White-Sneakers-PNG-Clipart 2.png" alt="Produto para compra">
+                    </div>
+
+                    <div class="descricao-produto-compra">
+
+                        <a class="titulo-produto-compra">
+                            <h2>
+                                Tênis Nike Revolution 6 Next Nature Masculino
+                            </h2>
+                        </a>
+
+                        <div class="caracteristicas-produto">
+                            <span class="cor">Cor:</span>
+                            <span class="valor">Vermelho / Branco</span>
+                        </div>
+
+                        <div class="caracteristicas-produto">
+                            <span class="tamanho">Tamanho:</span>
+                            <span class="valor">42</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+            </div>
+
+            <div class="resumo">
+                <h3>Resumo</h3>
+                <hr>
+                <input type="text" name="subtotal" placeholder="Subtotal:">R$ 219,00
+                <input type="text" name="frete" placeholder="Frete:">R$ 0,00
+                <input type="text" name="Desconto" placeholder="Desconto:">R$ 30,00
+                <h3>Total</h3>
+                <h3 class="preco">R$ 219,00</h3>
+                <button>Continuar</button>
+                
+            </div>
+
         </div>
 
-        <div class="resumo">
-            <h3>Resumo</h3>
-            <hr>
-            <input type="text" name="subtotal" placeholder="Subtotal:">R$ 219,00
-            <input type="text" name="frete" placeholder="Frete:">R$ 0,00
-            <input type="text" name="Desconto" placeholder="Desconto:">R$ 30,00
-            <h3>Total</h3>
-            <h3 class="valor">R$ 219,00</h3>
-            <button>Continuar</button>
-            
-        </div>
-
-    </div>
-
-
+    </section>  
 
 </body>
 </html>
