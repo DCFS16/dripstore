@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-header-menu {
+    display: flex;
+    width: 100%;
+    border: solid black 1px;
+}
+
+.main-header-menu .list-menu {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem 3rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.main-header-menu .item {
+    text-decoration: none;
+    color: #474747;
+    font-size: 1rem;
+    padding-left: 1rem;
+    letter-spacing: 0.75px;
+}
+
+.main-header-menu .item:hover {
+    color: #C92071;
+    font-weight: 700;
+    text-decoration: underline #C92071 0.125rem;
+}
+
