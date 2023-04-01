@@ -67,9 +67,9 @@ select.relevancia {
     height: 100%;
     padding-left: 113px;
     background-color: transparent;
-    margin-left: 10px;
+    margin-right: -200px;
 }
-/* .span{
+.span{
     margin-left: 10px;
 
-} */
+}
