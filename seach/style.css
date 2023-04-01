@@ -71,5 +71,44 @@ select.relevancia {
 }
 .span{
     margin-left: 10px;
+}
 
+aside{
+    width: 308px;
+    border: 1px solid black;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+aside hr{
+    width: 248px;
+    margin-top: 20px;
+}
+aside h4{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+aside h5{
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aside-group{ 
+    padding-top: 20px;
+}
+.aside-group-item{
+    margin-top: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.aside-group-item input{
+    margin-right: 10px; 
+    height: 22px;
+    width: 22px;
+    color: #C92071; 
+}
+.aside-group-item label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
