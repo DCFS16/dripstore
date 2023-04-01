@@ -32,3 +32,19 @@
     /* TODO: Remover quando o conteúdo for implementado */
     height: 364px;
 }
+input{
+    margin: 10px;
+    border: none;
+}
+button{
+    width: 274px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #F6AA1C;
+    color: #E5E5E5;
+    border: none;
+    font-size: 14px;
+}
+.valor{
+    color: #EE4266;
+}
