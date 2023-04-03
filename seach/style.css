@@ -23,26 +23,16 @@
 }
 
 .resultado-busca-content p.termo-busca {
-    width: 280px;
-    font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    color: #474747;
-
 }
 
 .resultado-busca-content p.quantidade-produtos {
-    width: 111px;
-    height: 28px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.75px;
     color: #474747;
 }
 
-label {  
+.resultado-busca-relevancia > label {  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,16 +48,13 @@ label {
 
 select.relevancia {
     border: none;
-    font-style: normal;
     font-size: 16px;
-    line-height: 28px;
     letter-spacing: 0.75px;
     position: absolute;
     width: 100%;
     height: 100%;
-    padding-left: 113px;
+    padding-left: 120px;
     background-color: transparent;
-    margin-right: -200px;
 }
 .span{
     margin-left: 10px;
