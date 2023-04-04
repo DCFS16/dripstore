@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.header-logo img{
+    
+}
+
 .header-logo h1 {
     font-family: 'Inter', sans-serif;
     color: #C92071;
@@ -28,8 +32,6 @@
     width: 559px;
     
 }
-
-
 
 
 
