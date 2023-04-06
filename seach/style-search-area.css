@@ -1,0 +1,202 @@
+
+
+body {
+    width: 100%;
+    height: auto;
+    background: #F9F8FE
+}
+
+#boss {
+    display: block;
+    margin-left: 150px;
+}
+
+.resultado-busca-relevancia {
+    width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    padding: 40px;
+    align-items: center;
+    
+}
+
+.resultado-busca-content {
+    display: flex;
+    width: 300px;
+    margin-left: -75px;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    gap: 10px;
+}
+
+.resultado-busca-content p.termo-busca {
+    font-weight: 700;
+}
+
+.resultado-busca-content p.quantidade-produtos {
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    color: #474747;
+}
+
+.resultado-busca-relevancia > label {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 332px;
+    height: 60px;
+    border: 1px solid #474747;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    position: relative;
+}
+
+
+select.relevancia {
+    border: none;
+    font-size: 16px;
+    letter-spacing: 0.75px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 120px;
+    background-color: transparent;
+}
+.span{
+    margin-left: 10px;
+}
+
+/* Estilos para o menu lateral */
+.sidebar {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    padding: 30px;
+    /* gap: 20px; */
+    /* position: absolute; */
+    width: 308px;
+    height: 720px;
+    /* left: 100px; */
+    /* top: 332px; */
+    margin-left: 25px;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+.box_aside-filter {
+    margin-right: 20px;
+    margin-left: 20px;
+   
+}
+
+hr {
+    width: 80%;
+}
+
+/* Estilos para os links do menu lateral */
+.aside-group-item input{
+    margin-right: 10px; 
+    height: 22px;
+    width: 22px;
+    accent-color: rgb(255, 0, 225);
+}
+
+/* Estilos para os links do menu lateral quando estão ativos */
+.sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilos para os links do menu lateral quando o mouse está passando por cima */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.main {
+    width: 70%;
+    display: flex;
+    margin-left: 393px;
+    margin-top: -780px;
+    padding: 20px;
+    /* background-color: #4CAF50; */
+}
+
+.M-ichi {
+
+    display: flex;
+    margin-top: 10px;
+    margin-left: 410px;
+    
+}
+
+.main-block{
+    
+    white-space: 100%;
+    margin-left: 15px;
+
+}
+
+.main_img_box {
+    display: block;
+    margin-top: 30px;
+    padding-left: 10px;
+   
+}
+
+.box_div-img {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    margin-top: -20px;
+    background-color: #ffffff;
+    padding-left: 10px;
+}
+
+
+img {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -30px;
+    width: 248px;
+    height: 134px;
+    /* filter: drop-shadow(-3.61398px 4.51747px 6.51852px rgba(0, 0, 0, 0.0274815)); */
+    transform: rotate(-30deg);
+}
+
+small.small-30 {
+    height: 10px;
+    font-size: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: yellow;
+}
+
+ /* K-Swiss V8 - Masculino */
+.K-Swiss {
+    color: #474747;
+    font-size: 18px;
+    line-height: 1.0cm;
+    letter-spacing: 1.55px;
+
+}
+
+.box_div-img-val {
+    padding: 2px;
+    margin: 2px;
+    letter-spacing: 1.55px;
+}
+
+.box-nome-div_igm-val {
+    margin-top: 10px;
+}
+
+del {
+    color:  #8F8F8F;
+    margin-bottom: 2px;
+}
