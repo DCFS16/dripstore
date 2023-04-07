@@ -89,14 +89,17 @@ select.relevancia {
 
 .box_aside-filter {
     margin-right: 20px;
-    margin-left: 20px;
-   
+    margin-left: 20px;   
 }
 
 hr {
-    width: 80%;
+    width: 248px;
 }
-
+/* Centralizar os itens com os inputs */
+.aside-group-item {
+    display: flex;
+    align-items: center;
+}
 /* Estilos para os links do menu lateral */
 .aside-group-item input{
     margin-right: 10px; 
