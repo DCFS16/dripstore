@@ -101,21 +101,17 @@ top: 0px;
     display: flex;
 }
 
-.principal{
-    width: 1239px;
-    max-width: 95%;
-    margin: 0 auto;    
-}
 
 /*------------------------ jessianne -------*/
 .principal{
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .retangulo-blusa{    
     
-    width: 400px;
+    width: 405px;
     height: 251px;
     background-color: #D8E3F2;
     border-radius: 8px;
@@ -169,7 +165,7 @@ top: 0px;
 /*--------------------------------------------------*/
 .retangulo-tenis{    
 
-    width: 400px;
+    width: 405px;
     height: 251px;
     background-color: #D8E3F2;
     border-radius: 8px;
@@ -223,7 +219,7 @@ top: 0px;
 /*--------------------------------------------------*/
 .retangulo-fone{    
     position: relative;
-    width: 400px;
+    width: 405px;
     height: 251px;
     background-color: #D8E3F2;
     border-radius: 8px;
