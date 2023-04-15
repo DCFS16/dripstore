@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +16,6 @@ body {
     margin: 0 auto;
 }
 
-
 .linha1{
     display: flex;
     height: 550px;
@@ -26,6 +27,7 @@ body {
     font-size: 16px;
     margin-top: 50px;
 }
+
 .anúncio > h2 {
     font-family:sans-serif; 
     font-size: 54px;
@@ -33,15 +35,15 @@ body {
     margin-top:50px;
   
 }
+
 .anúncio > h4 {
     font-family:sans-serif; 
     /* font: size 18px;; */
     font-size: 15px;
     color:gray;
-    margin-top: 50px;
-
-    
+    margin-top: 50px;    
 }
+
 button {
     text-align: center; 
     color: white; 
@@ -98,6 +100,185 @@ top: 0px;
 .imagem{
     display: flex;
 }
+
+.principal{
+    width: 1239px;
+    max-width: 95%;
+    margin: 0 auto;    
+}
+
+/*------------------------ jessianne -------*/
+.principal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.retangulo-blusa{    
+    
+    width: 400px;
+    height: 251px;
+    background-color: #D8E3F2;
+    border-radius: 8px;
+}
+
+.desconto{ /* 30% OFF */
+    /* position: absolute; */
+    background-color: #E7FF86;
+    width: 96px;
+    height: 32px;
+    border-radius: 29px;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding-top: 8px;
+    text-align: center;
+    font-size: 14px;
+    color: #474747;
+    font-weight: bold;
+}
+
+.colecoes{ /* texto "Novo drop Supreme" */
+    /* position: absolute; */
+    font-size: 32px;
+    color: #1F1F1F;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-top: 90px;
+    margin-left: 40px;
+    padding-right: 45px;
+}
+
+.comprar1{ /* botão comprar */
+    /* position: absolute; */
+    color: #C92071;
+    background-color: #F5F5F5;
+    margin-top: 180px;
+    margin-left: 40px;
+    width: 153px;
+    height: 48px;
+}
+
+.blusa{ /* div da imagem blusa */
+    margin-left: 163px;
+    background-color: #D8E3F2;;
+    border-radius: 8px;
+    height: 251px;
+    padding-top: 8px;
+    overflow: hidden;
+}
+/*--------------------------------------------------*/
+.retangulo-tenis{    
+
+    width: 400px;
+    height: 251px;
+    background-color: #D8E3F2;
+    border-radius: 8px;
+}
+
+.desconto{ /* 30% OFF */
+ 
+    background-color: #E7FF86;
+    width: 96px;
+    height: 32px;
+    border-radius: 29px;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding-top: 8px;
+    text-align: center;
+    font-size: 14px;
+    color: #474747;
+    font-weight: bold;
+}
+
+.colecoes{ /* texto "coleção adidas" */
+   
+    font-size: 32px;
+    color: #1F1F1F;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-top: 90px;
+    margin-left: 40px;
+    padding-right: 68px;
+}
+
+.comprar1{ /* botão comprar */
+   
+    color: #C92071;
+    background-color: #F5F5F5;
+    margin-top: 180px;
+    margin-left: 40px;
+    width: 153px;
+    height: 48px;
+}
+
+.colecao-tenis{ /*div da imagem tênis*/
+    margin-left: 163px;
+    background-color: #D8E3F2;
+    border-radius: 8px;
+    height: 251px;
+    padding-top: 8px;
+    overflow: hidden;
+}
+/*--------------------------------------------------*/
+.retangulo-fone{    
+    position: relative;
+    width: 400px;
+    height: 251px;
+    background-color: #D8E3F2;
+    border-radius: 8px;
+}
+
+.desconto{ /* 30% OFF */
+    position: absolute;
+    background-color: #E7FF86;
+    width: 96px;
+    height: 32px;
+    border-radius: 29px;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding-top: 8px;
+    text-align: center;
+    font-size: 14px;
+    color: #474747;
+    font-weight: bold;
+}
+
+.colecoes{ /* div do texto "Novo Beats Bass" */
+    position: absolute;
+    font-size: 32px;
+    color: #1F1F1F;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-top: 90px;
+    margin-left: 40px;
+    padding-right: 180px;
+}
+
+.comprar1{ /* botão comprar */
+    position: absolute;
+    color: #C92071;
+    background-color: #F5F5F5;
+    margin-top: 180px;
+    margin-left: 40px;
+    width: 153px;
+    height: 48px;
+}
+
+.fone{  /* div da imagem fone*/
+    margin-left: 179px;
+    height: 251px;
+}
+
+/*-------------------------------- jessianne -------*/
+
+
+
+
+
+
+
 /* .banner{
     margin-left: 30px;
     margin-right: 30px;
