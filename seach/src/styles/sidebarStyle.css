@@ -1,11 +1,3 @@
-
-
-body {
-    max-width: 1260px;
-    height: auto;
-    background: #F9F8FE
-}
-
 #boss {
     display: block;
     margin-left: 150px;
@@ -15,16 +7,16 @@ body {
     width: 1150px;
     display: flex;
     justify-content: space-between;
-    margin-left: 50px;
+    margin-left: 93px;
     padding: 40px;
     align-items: center;
-    
+
 }
 
 .resultado-busca-content {
     display: flex;
     width: 300px;
-    margin-left: -75px;
+    margin-left: -116px;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
@@ -41,7 +33,7 @@ body {
     color: #474747;
 }
 
-.resultado-busca-relevancia > label {  
+.resultado-busca-relevancia>label {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +58,8 @@ select.relevancia {
     padding-left: 120px;
     background-color: transparent;
 }
-.span{
+
+.span {
     margin-left: 10px;
 }
 
@@ -79,7 +72,7 @@ select.relevancia {
     /* gap: 20px; */
     /* position: absolute; */
     width: 308px;
-    height: 720px;
+    height: 650px;
     /* left: 100px; */
     /* top: 332px; */
     margin-left: 25px;
@@ -89,20 +82,22 @@ select.relevancia {
 
 .box_aside-filter {
     margin-right: 20px;
-    margin-left: 20px;   
+    margin-left: 20px;
 }
 
 hr {
     width: 248px;
 }
+
 /* Centralizar os itens com os inputs */
 .aside-group-item {
     display: flex;
     align-items: center;
 }
+
 /* Estilos para os links do menu lateral */
-.aside-group-item input{
-    margin-right: 10px; 
+.aside-group-item input {
+    margin-right: 10px;
     height: 22px;
     width: 22px;
     accent-color: rgb(255, 0, 225);
@@ -118,88 +113,4 @@ hr {
 .sidebar a:hover:not(.active) {
     background-color: #555;
     color: white;
-}
-
-.main {
-    width: 70%;
-    display: flex;
-    margin-left: 393px;
-    margin-top: -780px;
-    padding: 20px;
-    /* background-color: #4CAF50; */
-}
-
-.M-ichi {
-
-    display: flex;
-    margin-top: 10px;
-    margin-left: 410px;
-    
-}
-
-.main-block{
-    
-    white-space: 100%;
-    margin-left: 15px;
-
-}
-
-.main_img_box {
-    display: block;
-    margin-top: 30px;
-    padding-left: 10px;
-   
-}
-
-.box_div-img {
-    width: 250px;
-    height: 250px;
-    display: flex;
-    margin-top: -20px;
-    background-color: #ffffff;
-    padding-left: 10px;
-}
-
-
-img {
-    position: absolute;
-    margin-top: 50px;
-    margin-left: -30px;
-    width: 248px;
-    height: 134px;
-    /* filter: drop-shadow(-3.61398px 4.51747px 6.51852px rgba(0, 0, 0, 0.0274815)); */
-    transform: rotate(-30deg);
-}
-
-small.small-30 {
-    height: 10px;
-    font-size: 10px;
-    margin-top: 5px;
-    padding: 5px;
-    border-radius: 20px;
-    background-color: yellow;
-}
-
- /* K-Swiss V8 - Masculino */
-.K-Swiss {
-    color: #474747;
-    font-size: 18px;
-    line-height: 1.0cm;
-    letter-spacing: 1.55px;
-
-}
-
-.box_div-img-val {
-    padding: 2px;
-    margin: 2px;
-    letter-spacing: 1.55px;
-}
-
-.box-nome-div_igm-val {
-    margin-top: 10px;
-}
-
-del {
-    color:  #8F8F8F;
-    margin-bottom: 2px;
 }
