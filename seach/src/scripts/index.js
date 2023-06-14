@@ -19,7 +19,7 @@ function createProductList(products)
         <img src="${product.imageUrl}" alt="">
       </div>
       <div class="product__section">
-        <div>${product.name}</div>
+        <div style="color: red;">${product.name}</div>
         <div class="product__price">
           <del>$${product.originalPrice}</del>
           <div class="product__price--discounted">$${product.discountedPrice}</div>
