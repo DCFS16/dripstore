@@ -1,0 +1,119 @@
+/* Estilos para telas menores */
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
+        max-width: none;
+        padding: 0;
+    }
+
+    #boss {
+        margin-left: 0;
+    }
+
+    .resultado-busca-relevancia {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .resultado-busca-content {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .resultado-busca-content p.termo-busca {
+        font-size: 16px;
+    }
+
+    .resultado-busca-content p.quantidade-produtos {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .resultado-busca-relevancia>label {
+
+        margin-bottom: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 20px;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    .product-list {
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .product {
+        margin-left: 0;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .product__image {
+        width: 100%;
+        height: 176px;
+        margin-top: 0;
+        padding-left: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .product__image img {
+        width: 142px;
+        height: auto;
+        position: absolute;
+        top: 2%;
+        left: 12%;
+    }
+
+    .product__discount {
+        font-size: 12px;
+        margin-top: 10px;
+        padding: 2px 10px;
+        border-radius: 10px;
+    }
+
+    .product__name {
+        font-size: 16px;
+        line-height: 1.2cm;
+        letter-spacing: 1px;
+    }
+
+    .product__price {
+        font-size: 16px;
+    }
+
+    .product__price--original {
+        margin-bottom: 0;
+    }
+
+    .product__price--discounted {
+        margin-left: 5px;
+    }
+
+    .aside-group-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .aside-group-item input {
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    hr {
+        width: 100%;
+    }
+}
