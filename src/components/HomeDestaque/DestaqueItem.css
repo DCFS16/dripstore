@@ -3,7 +3,10 @@
     width: 25rem;
     height: 15rem;
     display: flex;
+    border-radius: 0.5rem;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 .destaqueItemInfos {
     display: flex;
@@ -28,8 +31,11 @@
     margin-bottom: 0.5rem;
 }
 .destaqueItemImage{
-
+    position: absolute;
+    margin-bottom: 0;
+    right: 0px;
 }
+
 .destaqueItemButton{
     color: #c92071;
     font-family: 'Inter', sans-serif;
