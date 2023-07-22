@@ -1,7 +1,16 @@
+.destaqueItem{
+    background-color: #d8e3f2;
+    width: 25rem;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+}
 .destaqueItemInfos {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-left: 1rem;
+    z-index: 1;
 }
 
 .destaqueItemDiscount {
@@ -10,5 +19,21 @@
     padding: 0.5rem;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.875rem;
 }
+.destaqueItemName{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.destaqueItemImage{
+
+}
+.destaqueItemButton{
+    color: #c92071;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
