@@ -1,13 +1,14 @@
-import './Destaque.css'
+import './DestaqueItem.css'
 const Destaque = ({desconto,text,textButton,img}) => {
     //
     return(
-        <div>
-            <span>{desconto}% OFF</span>
-            <p>{text}</p>
-            <button>{textButton}</button>
-            <img src={img}/>
-            
+        <div className='destaqueItem'>
+            <div className='destaqueItemInfos'>
+              <span className='destaqueItemDiscount'>{desconto}% OFF</span>
+              <p className='destaqueItemName'>{text}</p>
+              <button className='destaqueItemButton'>{textButton}</button>
+            </div>
+            <img className='destaqueItemImage' src={img}/>
         </div>
 
     )
