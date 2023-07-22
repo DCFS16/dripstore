@@ -1,12 +1,14 @@
-import { Children } from "react"
 
-const Destaque = ({desconto,text,textButton}) => {
+
+const Destaque = ({desconto,text,textButton,img}) => {
     //
     return(
         <>
             <span>{desconto}% OFF</span>
             <p>{text}</p>
             <button>{textButton}</button>
+            <img src={img}/>
+            
         </>
 
     )
