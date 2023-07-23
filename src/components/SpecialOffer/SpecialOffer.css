@@ -1,0 +1,95 @@
+.special-offer {
+  display: flex;
+  padding-left: 4%;
+  padding-right: 11%;
+}
+
+.special-offer .shoes-image-wrapper {
+  width: 40%;
+  min-width: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-offer .shoes-image-wrapper .shoes,
+.special-offer .shoes-image-wrapper .shoes-image {
+  width: 100%;
+}
+
+.special-offer .shoes-image-wrapper .shoes-image{
+  width: 90%;
+}
+
+.special-offer .special-offer-text {
+  width: 40%;
+  margin-left: 4.5%;
+}
+
+.special-offer .special-offer-text h4.title {
+  color: #C92071;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  text-align: left;
+  width: 116px;
+  height: 22px;
+  top: 2843px;
+  left: 692px;
+}
+
+.special-offer .special-offer-text h3.title {
+  color: #474747;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+  top: 2882px;
+  left: 692px;
+}
+
+.special-offer .special-offer-text .text {
+    color: #474747;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    top: 3002px;
+    left: 692px;
+}
+
+.special-offer .special-offer-text button {
+    background-color: #C92071;
+    color:  #F5F5F5;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    margin-top: 4%;
+    padding: 5px 40px;
+    cursor: pointer;
+}
+
+.special-offer .special-offer-text button:hover {
+  background-color:#da4f93 ;
+}
+
+
+@media screen and (max-width: 768px) {
+  .special-offer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .special-offer .special-offer-text h4.title {
+    color: #F6AA1C;
+  }
+
+  .special-offer .special-offer-text {
+    margin: 0;
+  }
+}
