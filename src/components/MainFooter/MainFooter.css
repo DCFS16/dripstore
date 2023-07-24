@@ -1,20 +1,27 @@
 .main-footer {
   display:flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 30px;
   color: #fff;
    
 }
 
+.colunm {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
 footer {
 
-  background-color: #363636;
+  background-color: #1F1F1F;
   bottom: 0;
-  width: 100%;
+  background-size: auto 100%;
   padding: 20px 40px 10px 40px ;
   
 }
-.footer-1{
+#footer-1{
   
   font-size: 16px;
   width: 300px;
@@ -30,7 +37,7 @@ footer {
   
 }
 
-.footer-2 {
+#footer-2 {
  font-size: 16px;
  display: flex;
  flex-direction: column;
@@ -40,10 +47,10 @@ footer {
 
 #h-footer2 {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-.footer-3 {
+#footer-3 {
   font-size: 16px;
  display: flex;
  flex-direction: column;
@@ -51,10 +58,10 @@ footer {
 
 #h-footer3 {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-.footer-4 {
+#footer-4 {
   font-size: 16px;
  display: flex;
  flex-direction: column;
@@ -63,10 +70,15 @@ footer {
 
 #h-footer4 {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
  
 }
 #p-footer4 {
+  margin-bottom: 30px;
+  
+}
+
+#n-footer4 {
   margin-bottom: 30px;
 }
 
@@ -76,11 +88,11 @@ a {
   color: #fff;
   text-decoration: none;
   margin-bottom: 15px;
-  
+  cursor: pointer;
 }
 
 
-.linha {
+#line {
   height: 1px;
   width: 100%;
   background-color: #fff;
@@ -95,4 +107,29 @@ span {
   font-size: 13px;
   color: #fff;
   
+}
+
+@media (max-width: 425px) {
+
+  footer {
+    padding-left: 20px;
+    
+  }
+
+  .main-footer {
+    padding-right: 30px;
+  }
+
+  #logo {
+    height: 20%;
+    width: 60%;
+  }
+
+  .colunm {
+    margin-top: 40px;
+  
+  }
+
+  
+
 }
