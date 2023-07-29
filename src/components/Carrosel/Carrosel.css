@@ -1,0 +1,113 @@
+.slide-show-carousel-container {
+height: 100vh;
+}
+
+.swiper {
+width: 100%;
+height: 100%;
+}
+
+.first-content {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 30px;
+height: 100%;
+background-color: rgb(244, 244, 244);
+position: relative;
+}
+
+.first-content div {
+flex-basis: 50%;
+}
+
+.first-content div h5 {
+white-space: nowrap;
+color: #f6aa1c;
+font-weight: 700;
+font-size: 1rem;
+margin-bottom: 10px;
+}
+
+.first-content div h3 {
+color: #000;
+font-weight: 800;
+font-size: 2.5rem;
+font-family: sans-serif;
+}
+
+.first-content div p {
+font-size: 1.2rem;
+font-weight: 400;
+letter-spacing: 0.75px;
+margin-bottom: 20px;
+}
+
+.first-content div button {
+width: 220px;
+height: 48px;
+border-radius: 12px;
+background-color: #c92071;
+color: white;
+border: none;
+transition: background-color 200ms;
+}
+
+.first-content div button:hover {
+background-color: #f9278c;
+}
+
+.first-content span img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+flex-basis: 50%;
+transform: rotate(-5.343deg);
+user-select: none;
+}
+
+.swiper-pagination {
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(244, 244, 244);
+padding: 5px;
+border-radius: 20px;
+}
+
+.swiper-pagination-bullet {
+width: 12px;
+height: 12px;
+border-radius: 50%;
+background-color: #bbb;
+margin: 0 5px;
+cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+background-color: #c92071;
+}
+
+@media (max-width: 600px) {
+.first-content {
+flex-direction: column-reverse;
+padding: 10px;
+}
+
+.swiper {
+height: auto;
+}
+
+.slide-show-carousel-container {
+height: auto;
+}
+
+.swiper-pagination {
+display: none;
+}
+
+}
