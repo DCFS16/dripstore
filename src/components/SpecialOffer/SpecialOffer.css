@@ -1,11 +1,16 @@
 .special-offer {
   display: flex;
-  padding-left: 4%;
-  padding-right: 11%;
+  /* padding-left: 4%;
+  padding-right: 11%; */
+  width: 1240px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 106px;
+  letter-spacing: 1px;
 }
 
 .special-offer .shoes-image-wrapper {
-  width: 40%;
+  width: 43.4%;
   min-width: 350px;
   position: relative;
   display: flex;
@@ -19,50 +24,44 @@
 }
 
 .special-offer .shoes-image-wrapper .shoes-image{
-  width: 90%;
+  width: calc(100% + 40px);
+  margin-left: -40px;
 }
 
 .special-offer .special-offer-text {
-  width: 40%;
-  margin-left: 4.5%;
+  width: 57.6%;
+  padding-left: 4.5%;
 }
 
 .special-offer .special-offer-text h4.title {
   color: #C92071;
-  font-family: Inter;
   font-size: 14px;
   font-weight: 700;
-  line-height: 22px;
-  letter-spacing: 0.75px;
-  text-align: left;
-  width: 116px;
-  height: 22px;
-  top: 2843px;
-  left: 692px;
+  width: 100%;
 }
 
-.special-offer .special-offer-text h3.title {
+.special-offer .special-offer-text h2.title {
   color: #474747;
+  width: 100%;
+  max-width: 514px;
   font-size: 48px;
-  font-weight: 700;
   line-height: 50px;
-  top: 2882px;
-  left: 692px;
+  padding-bottom: 20px;
+  padding-top: 17px;
 }
 
 .special-offer .special-offer-text .text {
     color: #474747;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 28px;
-    top: 3002px;
-    left: 692px;
 }
 
 .special-offer .special-offer-text button {
     background-color: #C92071;
+    width: 200px;
+    height: 40px;
     color:  #F5F5F5;
-    font-family: Inter;
     font-size: 14px;
     font-weight: 700;
     line-height: 22px;
@@ -71,8 +70,9 @@
     border-radius: 5px;
     border: none;
     margin-top: 4%;
-    padding: 5px 40px;
+    padding: 5px 30px;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 .special-offer .special-offer-text button:hover {
@@ -85,11 +85,26 @@
     flex-direction: column;
     align-items: center;
   }
-  .special-offer .special-offer-text h4.title {
-    color: #F6AA1C;
-  }
 
   .special-offer .special-offer-text {
     margin: 0;
+    width: 90%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+  }
+
+  .special-offer .special-offer-text h4.title {
+    color: #F6AA1C;
+  }
+  .special-offer .special-offer-text h2.title {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.25px;
+  }
+
+  .special-offer .special-offer-text button {
+    margin-bottom: 50px;
   }
 }

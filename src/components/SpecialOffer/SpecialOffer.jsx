@@ -13,7 +13,7 @@ const SpecialOffer = () => (
 
     <div className="special-offer-text">
       <h4 className="title">Oferta especial</h4>
-      <h3 className="title">Air Jordan edição de colecionador</h3>
+      <h2 className="title">Air Jordan edição de colecionador</h2>
       <p className="text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
