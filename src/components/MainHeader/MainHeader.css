@@ -9,29 +9,32 @@
 }
 .main-header div.container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 34px;
-  padding: 34px 100px 10px;
+  padding: 34px 0px 10px;
+  width: 1240px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-.main-header #logos {
+.main-header #logoWrap {
   height: 60px;
   display: flex;
-  width: 253px;
   justify-content: center;
   align-items: center;
+  max-width: 22%;
+  min-width: 22%;
 }
 
-.main-header #logos img {
+.main-header img.logo {
   width: 100%;
 }
 
 .main-header div.container input {
-  width: 569px;
+  width: 100%;
 }
 
-.main-header a.cadastro {
+.main-header a.register {
   padding-left: 48px;
   padding-right: 30px;
   color: #000;
@@ -40,21 +43,24 @@
 }
 
 
-.main-header #barraPesquisa {
+.main-header #search {
   border-radius: 5px;
   background-color: rgb(245, 240, 240);
   border-width: 0px;
   padding-left: 15px;
   margin-left: 15px;
   height: 60px;
-  width: 559px;
+  width: 100%;
 }
 
-.main-header #containerPesquisa {
+.main-header #researchContainer {
   position: relative;
+  width: 45%;
+  min-width: 250px;
+  max-width: 62%;
 }
 
-.main-header #btnPesquisa {
+.main-header #buttonSearch {
   background-color: none;
   border-width: 0px;
   position: absolute;
@@ -66,6 +72,7 @@
   width: 30px;
   margin: 0px;
   position: relative;
+  margin-left: 5.75%;
 }
 
 .main-header a.numberProduct {
@@ -89,4 +96,19 @@
 
 .main-header ul {
   padding: 0%;
+}
+
+@media (max-width: 900px){
+  .main-header div.purchase{
+    margin-left: 12px;
+  }
+  .main-header a.register{
+    padding-left: 25px;
+    padding-right: 18px;
+  }
+
+  .main-header #logoWrap {
+    min-width: 26%;
+  }
+
 }

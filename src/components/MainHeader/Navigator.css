@@ -18,8 +18,19 @@
 }
 
 .main-header .navigator {
-    width: 100%;
     padding-top: 30px;
-    padding-left: 100px;
     padding-bottom: 29px;
+    padding: 34px 0px 10px;
+    width: 1240px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .main-header .navigator{
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
 }

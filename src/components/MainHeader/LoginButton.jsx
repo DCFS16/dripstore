@@ -3,7 +3,7 @@ import './LoginButton.css'
 
 const LoginButton = () => (
 
-    <button id="botaoEntrar">Entrar</button>
+    <button id="loginButton">Entrar</button>
 
 )
 
