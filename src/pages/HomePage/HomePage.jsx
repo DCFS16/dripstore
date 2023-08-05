@@ -1,5 +1,5 @@
 import MainHeader from '../../components/MainHeader/MainHeader'
-import Destaque from '../../components/HomeDestaque/Destaque'
+import Destaque from '../../components/HomeHighlight/Highlight'
 import './HomePage.css'
 
 const HomePage = () => (
