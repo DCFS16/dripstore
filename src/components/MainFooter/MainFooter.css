@@ -23,7 +23,6 @@
   margin-bottom: 34px;
   margin-left: 15px;
   margin-right: 15px;
-
 }
 
 .main-footer .full-column {
@@ -71,12 +70,14 @@
   height: 1px;
   background-color: #ffff;
   opacity: 30%;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .main-footer .copy {
   text-align: center;
   margin-top: 23px;
-  margin-bottom: 22px;
+  padding-bottom: 22px;
 }
 
 .main-footer span {
@@ -103,6 +104,11 @@
 @media (max-width: 768px) {
   .main-footer .colunm {
     margin-left: 0;
+  }
+
+  .main-footer #line {
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
 }
@@ -147,6 +153,11 @@
   }
 
   .main-footer .copy {
-    margin-bottom: 46px;
+    padding-bottom: 46px;
+  }
+
+  .main-footer #line {
+    margin-left: 28px;
+    margin-right: 28px;
   }
 }
