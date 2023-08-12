@@ -7,7 +7,7 @@ import HighlightItem from './HighlightItem'
 const Highlight = ({ discount, text, textButton, img }) => {
     //
     return (
-        <div className="highlight-Wrapper">
+        <div className="highlight-Wrapper container">
             <HighlightItem discount="30" text="Novo drop Supreme" textButton="Comprar" img={shirt} />
             <HighlightItem discount="30" text="Novo Beat Bass" textButton="Comprar" img={headphone} />
             <HighlightItem discount="30" text="Coleção Adidas" textButton="Comprar" img={sneakers} />

@@ -1,5 +1,5 @@
 
-.highlight-Item{
+.highlight-Item {
     background-color: #d8e3f2;
     width: calc((100% - 1.5rem)/3);
     height: 15rem;
@@ -61,7 +61,7 @@
 
    @media (max-width:900px){
     .highlight-Item{
-       width: 110%;
+       width: 100%;
     }
     .highlight-Item .highlight-Item-Image{
        width: 40%;
@@ -83,5 +83,5 @@
         width: 80%;
         font-size: 220%;
     }
-   
+
    }
