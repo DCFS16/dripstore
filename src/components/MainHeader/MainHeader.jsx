@@ -14,7 +14,9 @@ const MainHeader = () => (
                 </div>
                 <div id="researchContainer">
                     <input id="search" type="search" placeholder="Pesquisar produto..."/>
-                    <button id="buttonSearch" type="submit"> <img src={Search}/> </button>
+                    <button id="buttonSearch" type="submit"> 
+                    <img src={Search}/> 
+                    </button>
                 </div>
                 <a className="register" href="">Cadastre-se</a>
                 <LoginButton/>
