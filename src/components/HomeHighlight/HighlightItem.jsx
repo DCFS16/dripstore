@@ -1,5 +1,5 @@
 import './HighlightItem.css'
-const Highlight = ({discount,text,textButton,img}) => {
+const Highlight = ({ discount, text, textButton, img }) => {
     //
     return(
         <div className='highlight-Item'>

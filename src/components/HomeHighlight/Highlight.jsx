@@ -1,16 +1,35 @@
 import './Highlight.css'
 import shirt from './assets/shirt.svg'
-import headphone from './assets/headphone.svg'
-import sneakers from './assets/sneakers.svg'
+// import headphone from './assets/headphone.svg'
+// import sneakers from './assets/sneakers.svg'
 import HighlightItem from './HighlightItem'
+import { useHighlights } from '../../hooks/useHighlights'
+import { HighlightItemLoader } from './HighlightItemLoader'
 
-const Highlight = ({ discount, text, textButton, img }) => {
-    //
+const Highlight = () => {
+    const { highlights, loading } = useHighlights(3)
+
+    if (loading) {
+        return (
+            <div className="highlight-Wrapper container">
+                <HighlightItemLoader />
+                <HighlightItemLoader />
+                <HighlightItemLoader />
+            </div>
+
+        )
+    }
+
     return (
         <div className="highlight-Wrapper container">
-            <HighlightItem discount="30" text="Novo drop Supreme" textButton="Comprar" img={shirt} />
-            <HighlightItem discount="30" text="Novo Beat Bass" textButton="Comprar" img={headphone} />
-            <HighlightItem discount="30" text="Coleção Adidas" textButton="Comprar" img={sneakers} />
+            {highlights.map(({ discount, text, textButton, image }) =>
+                <HighlightItem
+                    discount={discount}
+                    text={text}
+                    textButton={textButton}
+                    img={image}
+                />
+            )}
         </div>
 
     )
