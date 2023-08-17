@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react"
-import { API_URL } from "../constants"
+import { useEffect, useState } from 'react'
+import { API_URL } from '../constants'
 
 export const useProducts = (limit) => {
     const [products, setProducts] = useState([])
@@ -11,12 +11,13 @@ export const useProducts = (limit) => {
             .then(data => {
                 setLoading(false) 
                 setProducts(data.slice(0,limit))
-                
+
             })
     }, [])
+    console.log(products)
 
-    return(
+    return{
         products,
         loading
-    )
+    }
 }

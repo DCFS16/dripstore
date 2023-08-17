@@ -1,6 +1,6 @@
 const MainHeader = () => (
     <header>
-        TODO: Header
+        {/* TODO: Header */}
     </header>
 )
 

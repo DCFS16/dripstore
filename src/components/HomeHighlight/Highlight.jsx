@@ -22,8 +22,9 @@ const Highlight = () => {
 
     return (
         <div className="highlight-Wrapper container">
-            {highlights.map(({ discount, text, textButton, image }) =>
-                <HighlightItem
+            {highlights.map(({ id, discount, text, textButton, image }) =>
+                <HighlightItem 
+                    key={id}
                     discount={discount}
                     text={text}
                     textButton={textButton}

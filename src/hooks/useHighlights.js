@@ -13,7 +13,7 @@ export const useHighlights = (limit) => {
                 setHighlights(data.slice(0, limit))
             })
     }, [])
-
+    console.log(highlights)
 
     return {
         highlights,
