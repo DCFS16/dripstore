@@ -11,6 +11,7 @@ export const useProducts = (limit) => {
             .then(data => {
                 setLoading(false) 
                 setProducts(data.slice(0,limit))
+                
             })
     }, [])
 
