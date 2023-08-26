@@ -39,37 +39,49 @@ const MainHeader = () => {
 
     return (
         <header className="main-header">
-                <div className="container">
-                    <div id="logoWrap">
-                        <img className="logo" src={Logo}/>
-                    </div>
-                    <div id="researchContainer">
-                        <input
-                            id="search"
-                            type="search"
-                            placeholder="Pesquisar produto..."
-                        />
-                        <button
-                            id="buttonSearch"
-                            type="submit"
-                        >
-                            <img src={Search}/>
-                        </button>
-                    </div>
-                    <a className="register" href="">Cadastre-se</a>
-                    <LoginButton/>
-                    <div className="purchase" onClick={handleClickCart}>
-                        <a className="carPurchase">
-                            <img src={Stroke} />
-                        </a>
-                        <a className="numberProduct">2</a>
-                    </div>
+            <div className="container">
+                <div id="logoWrap">
+                    <img className="logo" src={Logo} />
                 </div>
-                <Navigator/>
-                {showCart ? <CartModal /> : null}
+                <div id="researchContainer">
+                    <input
+                        id="search"
+                        type="search"
+                        placeholder="Pesquisar produto..."
+                    />
+                    <button
+                        id="buttonSearch"
+                        type="submit"
+                    >
+                        <img src={Search} />
+                    </button>
+                </div>
+                <a className="register" href="">Cadastre-se</a>
+                <LoginButton />
+                <div className="purchase" onClick={handleClickCart}>
+                    <a className="carPurchase">
+                        <img src={Stroke} />
+                    </a>
+                    <a className="numberProduct">2</a>
+                </div>
+                <div id="researchContainer">
+                    <input id="search" type="search" placeholder="Pesquisar produto..." />
+                    <button id="buttonSearch" type="submit">
+                        <img src={Search} />
+                    </button>
+                </div>
+                <a className="register" href="">Cadastre-se</a>
+                <LoginButton />
+                <div className="purchase">
+                    <a className="carPurchase" href=""><img src={Stroke} /></a>
+                    <a className="numberProduct" href="">2</a>
+                </div>
+            </div>
+            <Navigator />
+            {showCart ? <CartModal /> : null}
         </header>
     )
-}
 
+}
 
 export default MainHeader
