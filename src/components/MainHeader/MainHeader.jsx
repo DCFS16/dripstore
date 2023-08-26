@@ -10,7 +10,7 @@ import './MainHeader.css'
 import { useEffect } from 'react'
 
 
-const MainHeader = () => {
+const MainHeader = ({cartItems,handleRemoveCartItem}) => {
     const [showCart, setShowCart] = useState(false)
 
     useEffect(() => {
@@ -34,6 +34,7 @@ const MainHeader = () => {
 
     const handleClickCart = (event) => {
         event.stopPropagation()
+        event.preventDefault()
         setShowCart(!showCart)
     }
 
@@ -58,27 +59,15 @@ const MainHeader = () => {
                 </div>
                 <a className="register" href="">Cadastre-se</a>
                 <LoginButton />
-                <div className="purchase" onClick={handleClickCart}>
-                    <a className="carPurchase">
+                <a className="purchase" onClick={handleClickCart}>
+                    <span className="carPurchase" >
                         <img src={Stroke} />
-                    </a>
-                    <a className="numberProduct">2</a>
-                </div>
-                <div id="researchContainer">
-                    <input id="search" type="search" placeholder="Pesquisar produto..." />
-                    <button id="buttonSearch" type="submit">
-                        <img src={Search} />
-                    </button>
-                </div>
-                <a className="register" href="">Cadastre-se</a>
-                <LoginButton />
-                <div className="purchase">
-                    <a className="carPurchase" href=""><img src={Stroke} /></a>
-                    <a className="numberProduct" href="">2</a>
-                </div>
+                    </span>
+                    <span className="numberProduct">{cartItems.length}</span>
+                </a>
             </div>
             <Navigator />
-            {showCart ? <CartModal /> : null}
+            {showCart ? <CartModal items={cartItems} removeItem={handleRemoveCartItem} /> : null}
         </header>
     )
 

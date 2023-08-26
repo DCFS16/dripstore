@@ -1,32 +1,34 @@
 import { useEffect, useState } from 'react'
 import './CartModal.css'
-import useCartItems from '../../hooks/useCartItems'
+import {useProducts} from '../../hooks/useProducts'
 
-const CartModalItem = ({ avatar, name, price }) => (
+const CartModalItem = ({id, image, name, price, amount, remove }) => (
     <div>
         <img
-            src={avatar}
+            src={image}
             alt={name}
             width={80}
         />
         <p>{name}</p>
         <p>{price}</p>
+        <p>x {amount}</p>
+        <button onClick={(event) => {
+            event.stopPropagation()
+            remove(id)
+        }}>REMOVER</button>
     </div>
 )
 
-const CartModal = () => {
-    const { items, loading } = useCartItems()
-
+const CartModal = ({items,removeItem}) => {
     return (
         <div className="cart-modal">
             <h4>Carrinho</h4>
-            {loading ? 'Loading...' : null}
-
+            
+            {items.length === 0 && <p>Sem items no carrinho 😢</p>}
             {items.map(item => (
                 <CartModalItem
-                    avatar={item.avatar}
-                    name={item.name}
-                    price={item.price}
+                    {...item}
+                    remove={removeItem}
                 />
             ))}
         </div>

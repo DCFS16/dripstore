@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react"
 import { BASE_API_URL } from "../contants"
 
-const useCartItems = () => {
+export const useProducts = () => {
   const [items, setItems] = useState([])
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     setLoading(true)
-    fetch(`${BASE_API_URL}/cart`)
+    fetch(`${BASE_API_URL}/products`)
       .then(response => response.json())
       .then(data => {
         setLoading(false)
@@ -20,5 +20,3 @@ const useCartItems = () => {
     items
   }
 }
-
-export default useCartItems
