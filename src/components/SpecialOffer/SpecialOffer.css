@@ -1,0 +1,110 @@
+.special-offer {
+  display: flex;
+  /* padding-left: 4%;
+  padding-right: 11%; */
+  width: 1240px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 106px;
+  letter-spacing: 1px;
+}
+
+.special-offer .shoes-image-wrapper {
+  width: 43.4%;
+  min-width: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-offer .shoes-image-wrapper .shoes,
+.special-offer .shoes-image-wrapper .shoes-image {
+  width: 100%;
+}
+
+.special-offer .shoes-image-wrapper .shoes-image{
+  width: calc(100% + 40px);
+  margin-left: -40px;
+}
+
+.special-offer .special-offer-text {
+  width: 57.6%;
+  padding-left: 4.5%;
+}
+
+.special-offer .special-offer-text h4.title {
+  color: #C92071;
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.special-offer .special-offer-text h2.title {
+  color: #474747;
+  width: 100%;
+  max-width: 514px;
+  font-size: 48px;
+  line-height: 50px;
+  padding-bottom: 20px;
+  padding-top: 17px;
+}
+
+.special-offer .special-offer-text .text {
+    color: #474747;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.special-offer .special-offer-text button {
+    background-color: #C92071;
+    width: 200px;
+    height: 40px;
+    color:  #F5F5F5;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    margin-top: 4%;
+    padding: 5px 30px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.special-offer .special-offer-text button:hover {
+  background-color:#da4f93 ;
+}
+
+
+@media screen and (max-width: 768px) {
+  .special-offer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .special-offer .special-offer-text {
+    margin: 0;
+    width: 90%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+  }
+
+  .special-offer .special-offer-text h4.title {
+    color: #F6AA1C;
+  }
+  .special-offer .special-offer-text h2.title {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.25px;
+  }
+
+  .special-offer .special-offer-text button {
+    margin-bottom: 50px;
+  }
+}
