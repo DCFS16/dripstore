@@ -2,7 +2,7 @@ import Search from './assets/Search.png'
 import Logo from './assets/logo.png'
 import Stroke from './assets/Stroke.png'
 import LoginButton from './LoginButton'
-import Navigator from './Navigator'
+import {Navigator} from './Navigator'
 import './MainHeader.css'
 
 
