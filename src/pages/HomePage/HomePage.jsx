@@ -6,6 +6,7 @@ const HomePage = () => (
     <>
         <MainHeader />
         <SpecialOffer />
+        <h1 className="title"></h1>
     </>
 )
 
