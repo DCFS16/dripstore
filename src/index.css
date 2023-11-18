@@ -4,3 +4,9 @@
   box-sizing: border-box;
   font-family: Inter, Arial,  sans-serif;
 }
+
+.container {
+  width: 1240px;
+  max-width: 90%;
+  margin: auto;
+}
