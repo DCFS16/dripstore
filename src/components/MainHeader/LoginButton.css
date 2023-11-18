@@ -1,0 +1,10 @@
+.main-header #loginButton {
+    width: 114px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #c92071;
+    color: white;
+    border-width: 0px;
+    cursor: pointer;
+    min-width:114px;
+}
