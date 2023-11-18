@@ -7,15 +7,25 @@
     line-height: 30px;
 }
 
-.main-header li a {
+.main-header li a.default-link {
     color: black;
+    font-weight: bold;
+
 }
 
 .main-header li a:hover {
     color: #c92071;
     text-decoration: underline;
     font-weight: bold;
+    transition:all 0.2s linear;
 }
+
+.active-link {
+    color: #c92071;
+    font-weight: bold;
+}
+
+
 
 .main-header .navigator {
     padding-top: 30px;

@@ -1,22 +1,58 @@
-import './Navigator.css';
+import { useState } from "react";
+import "./Navigator.css";
+import { Link } from "react-router-dom";
 
-const Navigator = () => (
-  <nav className="navigator">
-    <ul>
-      <li>
-        <a href="">Home</a>
-      </li>
-      <li>
-        <a href="">Produtos</a>
-      </li>
-      <li>
-        <a href="">Categorias</a>
-      </li>
-      <li>
-        <a href="">Meus pedidos</a>
-      </li>
-    </ul>
-  </nav>
-);
+export const Navigator = () => {
+  const [active, setActive] = useState("home");
 
-export default Navigator;
+  return (
+    <nav className="navigator">
+      <ul>
+        <li>
+          <Link
+            onClick={() => {
+              setActive("home");
+            }}
+            className={active === "home" ? "active-link" : "default-link"}
+            to="/"
+          >
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            onClick={() => {
+              setActive("products");
+            }}
+            className={active === "products" ? "active-link" : "default-link"}
+            to="/produtos"
+          >
+            Produtos
+          </Link>
+        </li>
+        <li>
+          <Link
+            onClick={() => {
+              setActive("categories");
+            }}
+            className={active === "categories" ? "active-link" : "default-link"}
+            to="/categorias"
+          >
+            Categorias
+          </Link>
+        </li>
+        <li>
+          <Link
+            onClick={() => {
+              setActive("orders");
+            }}
+            className={active === "orders" ? "active-link" : "default-link"}
+            to="/minhas-compras"
+          >
+            Meus pedidos
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
