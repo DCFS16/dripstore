@@ -1,22 +1,40 @@
+import { useState } from 'react';
 import './Navigator.css';
+import { Link } from 'react-router-dom';
 
-const Navigator = () => (
+const Navigator = () => {
+  
+    const [active, setActive] = useState('home');
+  
+  return(
   <nav className="navigator">
     <ul>
       <li>
-        <a href="">Home</a>
+        <Link
+         onClick={() => {setActive('home')}} 
+        className={active === 'home' ? 'active-link' : 'default-link'} to="/"
+        >Home</Link>
       </li>
       <li>
-        <a href="">Produtos</a>
+        <Link 
+         onClick={() => {setActive('products')}}
+        className={active === 'products' ? 'active-link' : 'default-link'} to="/produtos"
+        >Produtos</Link>
       </li>
       <li>
-        <a href="">Categorias</a>
+        <Link
+         onClick={() => {setActive('categories')}} 
+        className={active === 'categories' ? 'active-link' : 'default-link'} to="/categorias"
+        >Categorias</Link>
       </li>
       <li>
-        <a href="">Meus pedidos</a>
+        <Link 
+        onClick={() => {setActive('orders')}}
+        className={active === 'orders' ? 'active-link' : 'default-link'} to="/minhas-compras"
+        >Meus pedidos</Link>
       </li>
     </ul>
   </nav>
 );
-
+}
 export default Navigator;

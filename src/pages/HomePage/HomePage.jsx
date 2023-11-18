@@ -8,11 +8,9 @@ import { Carrosel } from '../../components/Carrosel/Carrosel'
 
 const HomePage = () => (
     <>
-        <MainHeader />
         <Carrosel/>
         <Destaque />
         <SpecialOffer />
-        <MainFooter />
     </>
 
 )
