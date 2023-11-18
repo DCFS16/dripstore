@@ -1,0 +1,163 @@
+.main-footer {
+  background-color: #1F1F1F;
+  padding-top: 72px;
+  font-size: 16px;
+}
+
+.main-footer .main-footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #fff;
+  width: 1240px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.main-footer .main-footer-content > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer .colunm {
+  margin-bottom: 34px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.main-footer .full-column {
+  width: 100%;
+  max-width: 300px;
+}
+
+.main-footer #logo {
+  margin-bottom: 35px;
+  max-width: 253px;
+}
+
+
+
+.main-footer #h-footer2 {
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+
+.main-footer #h-footer3 {
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+
+
+.main-footer #h-footer4 {
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.main-footer #p-footer4 {
+  margin-bottom: 30px;
+}
+
+.main-footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.main-footer #line {
+  height: 1px;
+  background-color: #ffff;
+  opacity: 30%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.main-footer .copy {
+  text-align: center;
+  margin-top: 23px;
+  padding-bottom: 22px;
+}
+
+.main-footer span {
+  font-size: 13px;
+  color: #fff;
+}
+
+.main-footer .colunm {
+  margin-left: 0;
+}
+
+.main-footer #icons {
+  padding-top: 40px;
+  max-width: 124px;
+}
+
+@media (max-width: 960px) {
+  .main-footer #icons {
+    margin-bottom: 40px;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-footer .colunm {
+    margin-left: 0;
+  }
+
+  .main-footer #line {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+}
+
+@media (max-width: 516px) {
+  .main-footer {
+    padding-top: 50px;
+  }
+  .main-footer .main-footer {
+    padding-left: 20px;
+  }
+
+  .main-footer .main-footer-content {
+    padding-right: 30px;
+  }
+
+  .main-footer #logo {
+    height: 20%;
+    width: 60%;
+    max-width: 170px;
+  }
+
+  .main-footer #h-footer2 {
+    margin-bottom: 20px;
+  }
+
+  .main-footer #h-footer3 {
+    margin-bottom: 20px;
+  }
+
+  .main-footer #h-footer4 {
+    margin-bottom: 20px;
+  }
+
+  .main-footer #icons {
+    margin-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .main-footer .colunm {
+    margin-left: 0;
+  }
+
+  .main-footer .copy {
+    padding-bottom: 46px;
+  }
+
+  .main-footer #line {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+}
