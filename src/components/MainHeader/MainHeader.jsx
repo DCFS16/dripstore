@@ -1,33 +1,78 @@
+import { useState } from 'react'
 import Search from './assets/Search.png'
 import Logo from './assets/logo.png'
 import Stroke from './assets/Stroke.png'
 import LoginButton from './LoginButton'
 import {Navigator} from './Navigator'
 import './MainHeader.css'
+import { useEffect } from 'react'
+import CartModal from './CartModal'
+import { useCart } from '../../hooks/useCart'
+
+const MainHeader = () => {
+    const [showCart, setShowCart] = useState(false)
+    const { cartItems } = useCart()
+    
+    
+    
+
+    useEffect(() => {
+        const handleDocumentClick = () => {
+            setShowCart(false)
+        }
+
+        document.addEventListener('click', handleDocumentClick)
+
+        return () => {
+            document.removeEventListener('click', handleDocumentClick)
+        }
+    }, [])
 
 
-const MainHeader = () => (
-    <header className="main-header">
+    const handleClickCart = (event) => {
+        event.stopPropagation()
+        event.preventDefault()
+        setShowCart(!showCart)
+    }
+
+    const handleRemoveCartItem = (id) => {
+
+    }
+
+    return (
+        <header className="main-header">
             <div className="container">
                 <div id="logoWrap">
-                    <img className="logo" src={Logo}/>
+                    <img className="logo" src={Logo} />
                 </div>
                 <div id="researchContainer">
-                    <input id="search" type="search" placeholder="Pesquisar produto..."/>
-                    <button id="buttonSearch" type="submit"> 
-                    <img src={Search}/> 
+                    <input
+                        id="search"
+                        type="search"
+                        placeholder="Pesquisar produto..."
+                    />
+                    <button
+                        id="buttonSearch"
+                        type="submit"
+                    >
+                        <img src={Search} />
                     </button>
                 </div>
                 <a className="register" href="">Cadastre-se</a>
-                <LoginButton/>
-                <div className="purchase">
-                    <a className="carPurchase" href=""><img src={Stroke} /></a>
-                    <a className="numberProduct" href="">2</a>
-                </div>
+                <LoginButton />
+                <a className="purchase" onClick={handleClickCart}>
+                    <span className="carPurchase" >
+                        <img src={Stroke} />
+                    </span>
+                    <span className="numberProduct">{cartItems.length}</span>
+                </a>
             </div>
-            <Navigator/>
-    </header>
-)
+            <Navigator />
+            {showCart ? <CartModal items={cartItems} removeItem={handleRemoveCartItem} /> : null}
+        </header>
+    )
 
+}
 
 export default MainHeader
+
