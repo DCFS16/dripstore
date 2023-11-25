@@ -1,12 +1,15 @@
 import { BrowserRouter } from "react-router-dom";
 import { Router } from "./Router";
+import { CartProvider } from "./contexts/CartContext";
 
 const App = () => {
   return (
     <>
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
+      <CartProvider>
+        <BrowserRouter>
+          <Router />
+        </BrowserRouter>
+      </CartProvider>
     </>
   );
 };
