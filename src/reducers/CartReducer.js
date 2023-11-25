@@ -4,7 +4,7 @@
 const initialStateCart = []
 
 
-const CartReducer = (cartItems, action) => {
+const cartReducer = (cartItems, action) => {
     switch (action.type) {
         case 'REMOVE_CART_ITEM':
             const id = action.id;
@@ -42,5 +42,5 @@ const CartReducer = (cartItems, action) => {
     }
 };
 
-export {CartReducer,initialStateCart}
+export {cartReducer,initialStateCart}
 
