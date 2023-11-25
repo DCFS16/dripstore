@@ -10,7 +10,7 @@ import CartModal from './CartModal'
 import { useCart } from '../../hooks/useCart'
 
 const MainHeader = () => {
-    const [showCart, setShowCart] = useState(false)
+    const [showCart, setShowCart] = useState(true)
     const { cartItems } = useCart()
     
     

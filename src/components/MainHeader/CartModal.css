@@ -1,9 +1,90 @@
 .cart-modal {
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    background-color: #c7c7c7;
-    top: 80px;
-    right: 40px;
-    overflow: auto;
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  top: 80px;
+  right: 40px;
+  overflow: auto;
+  z-index: 1000;
+  border-radius: 0.5rem;
+}
+
+.cart-modal .grid-modal {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2rem 1fr 5rem;
+  height: 100%;
+  padding: 1rem 1.6rem;
+}
+.cart-modal .grid-modal header {
+  place-self: start;
+  width: 100%;
+  position: relative;
+}
+.cart-modal .grid-modal header:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 1rem 0;
+}
+
+.cart-modal .grid-modal main {
+  padding-top: 1rem;
+  position: relative;
+}
+
+.cart-modal .grid-modal main:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+
+  bottom: 0;
+}
+
+.cart-modal .grid-modal footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.cart-modal .grid-modal footer .preview-price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-modal .grid-modal footer .preview-price-container div {
+  color: #1f1f1f;
+}
+.cart-modal .grid-modal footer .preview-price-container h4 {
+  color: #ee4266;
+}
+
+.cart-modal .grid-modal footer .buttons-modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-modal .grid-modal footer .buttons-modal-container button.clean-cart-btn {
+  background-color: transparent;
+  border: none;
+  color: #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #474747;
+}
+.cart-modal .grid-modal footer .buttons-modal-container button.go-to-cart-btn {
+  background-color: #c92071;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  height: 100%;
+  width: 8rem;
 }
