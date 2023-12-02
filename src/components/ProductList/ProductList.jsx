@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./ProductList.css";
-import { cardProduct } from "./cardProduct";
+import { CardProduct } from "./cardProduct";
 
 const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
@@ -30,7 +30,7 @@ const ProductList = () => (
       </div>
       <div className="image-wrapper">
         {myArray.map((item) => (
-          cardProduct()
+          <CardProduct />
         ))}
       </div>
     </section>

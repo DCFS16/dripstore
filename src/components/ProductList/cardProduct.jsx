@@ -2,7 +2,7 @@ import "./ProductList.css";
 import Shoesimage from "../ProductList/assets/ProductListShoe.png";
 
 
-export const cardProduct = () => {
+export const CardProduct = () => {
   return (
     <div className="shoes-image-wrapper">
       <div className="shoes">
