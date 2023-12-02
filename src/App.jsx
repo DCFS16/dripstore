@@ -1,12 +1,14 @@
-import HomePage from './pages/HomePage/HomePage'
+import { BrowserRouter } from "react-router-dom";
+import { Router } from "./Router";
 
 const App = () => {
-
   return (
     <>
-    <HomePage />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
