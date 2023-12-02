@@ -1,8 +1,10 @@
 import "./ProductList.css";
 import Shoesimage from "../ProductList/assets/ProductListShoe.png";
 
+export const CardProduct = ({ category, name, price, discount,onClick }) => {
+  
+  
 
-export const CardProduct = () => {
   return (
     <div className="shoes-image-wrapper">
       <div className="shoes">
@@ -10,12 +12,19 @@ export const CardProduct = () => {
       </div>
 
       <div className="product-info">
-        <h4 className="tipe">Tênis</h4>
-        <h2 className="title">K-Swiss V8 - Masculino</h2>
+        <h4 className="tipe">{category}</h4>
+        <h2 className="title">{name}</h2>
         <h3 className="price">
-          <s>R$200</s>R$100
+          {discount ? (
+            <>
+              <s>R$200</s> R${price}
+            </>
+          ) : (
+            `R$${price}`
+          )}
         </h3>
       </div>
+      <button onClick={onClick}>add cart</button>
     </div>
   );
 };

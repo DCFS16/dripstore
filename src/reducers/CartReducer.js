@@ -21,7 +21,7 @@ const cartReducer = (cartItems, action) => {
             }
         
         case 'ADD_CART_ITEM':
-
+            console.log('add cart item', action.item);
             const itemToAdd = action.item;
             const existingItem = cartItems.find(cartItem => cartItem.id === itemToAdd.id);
 

@@ -1,6 +1,18 @@
+import { useCart } from "../../hooks/useCart";
 import "./CartModal.css";
 
-const CartModalItem = ({ id, image, name, price, amount, remove }) => (
+const CartModalItem = ({ id, image, name, price, amount }) => {
+  
+  const {dispatch} = useCart()
+
+  const removeCartItem = (id) => {
+    dispatch({
+      type: 'REMOVE_CART_ITEM',
+      id:id
+    })
+  }
+
+  return(
   <div>
     <img src={image} alt={name} width={80} />
     <p>{name}</p>
@@ -9,15 +21,15 @@ const CartModalItem = ({ id, image, name, price, amount, remove }) => (
     <button
       onClick={(event) => {
         event.stopPropagation();
-        remove(id);
+        removeCartItem(id);
       }}
     >
       REMOVER
     </button>
   </div>
-);
+)};
 
-const CartModal = ({ items, removeItem }) => {
+const CartModal = ({ items }) => {
   return (
     <div className="cart-modal">
       <div className="grid-modal">
@@ -27,7 +39,7 @@ const CartModal = ({ items, removeItem }) => {
         <main>
         {items.length === 0 && <p>Sem items no carrinho 😢</p>}
         {items.map((item) => (
-          <CartModalItem {...item} remove={removeItem} />
+          <CartModalItem {...item}  />
         ))}
         </main>
         <footer>

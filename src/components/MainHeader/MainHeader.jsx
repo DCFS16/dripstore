@@ -36,7 +36,10 @@ const MainHeader = () => {
     }
 
     const handleRemoveCartItem = (id) => {
-
+        dispatch({
+            type: 'REMOVE_CART_ITEM',
+            id:id
+        })
     }
 
     return (
@@ -68,7 +71,7 @@ const MainHeader = () => {
                 </a>
             </div>
             <Navigator />
-            {showCart ? <CartModal items={cartItems} removeItem={handleRemoveCartItem} /> : null}
+            {showCart ? <CartModal items={cartItems}  /> : null}
         </header>
     )
 

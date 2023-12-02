@@ -2,10 +2,28 @@ import React from "react";
 
 import "./ProductList.css";
 import { CardProduct } from "./ProductCard";
+import { useFetch } from "../../hooks/useFetch";
+import { useCart } from "../../hooks/useCart";
 
-const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
-const ProductList = () => (
+
+const myArray = Array.from({ length: 10 }, (_, index) => index);
+
+const ProductList = () => {
+
+  const { items, loading, } = useFetch('/products')
+  const {dispatch,cartItems} = useCart()
+  console.log(cartItems);
+
+  const addCartItem = (product) => {
+    console.log(product);
+    dispatch({
+      type: 'ADD_CART_ITEM',
+      item: product
+    })
+  }
+  
+  return(
   <>
     <section className="product-list">
       <div className="products-page">
@@ -28,13 +46,23 @@ const ProductList = () => (
           </svg>
         </a>
       </div>
-      <div className="image-wrapper">
-        {myArray.map((item) => (
-          <CardProduct />
-        ))}
-      </div>
+
+      
+        <div className="image-wrapper">
+          {items.map((item) => (
+            <CardProduct
+            onClick={() => addCartItem(item)}
+            category={item.category}
+            name={item.name}
+            price={item.price}
+            discount={item.discount}
+            key={item.id}
+            />
+          ))}
+        </div>
+      
     </section>
   </>
-);
+)};
 
 export default ProductList;
