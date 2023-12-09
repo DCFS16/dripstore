@@ -12,11 +12,10 @@ const myArray = Array.from({ length: 10 }, (_, index) => index);
 const ProductList = () => {
 
   const { items, loading, } = useFetch('/products')
+  
   const {dispatch,cartItems} = useCart()
-  console.log(cartItems);
 
   const addCartItem = (product) => {
-    console.log(product);
     dispatch({
       type: 'ADD_CART_ITEM',
       item: product
