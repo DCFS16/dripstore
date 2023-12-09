@@ -10,3 +10,8 @@
   max-width: 90%;
   margin: auto;
 }
+
+.error {
+  color: red;
+  font-size: 10px;
+}
